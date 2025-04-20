@@ -1,15 +1,24 @@
-FROM oven/bun:1 as base
+FROM oven/bun:alpine AS base
 
+# Step 1 - install dependencies
+FROM base AS deps
 WORKDIR /app
-COPY . /app
+COPY package.json bun.lockb ./
+RUN bun install --frozen-lockfile
 
+# Step 2 - rebuild the app
+FROM base AS builder
 WORKDIR /app
-RUN bun install
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
 RUN bun run build
 
-FROM ubuntu:latest
-RUN apt-get update
-RUN apt-get install nginx -y
-COPY --from=base /app/dist /var/www/html/
-EXPOSE 80
-CMD ["nginx","-g","daemon off;"]
+# Step 3 - copy all the files and run server
+FROM base AS runner
+WORKDIR /app
+ENV NODE_ENV=production
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next/static ./.next/static
+
+EXPOSE 3000
+CMD ["bun", "run", "server.js"]

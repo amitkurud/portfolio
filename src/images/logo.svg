@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="25" cy="25" r="23" stroke="currentColor" stroke-width="2" fill="none" opacity="0.2"/>
+  
+  <!-- Letter A -->
+  <path d="M15 35L25 15L35 35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 30H30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Letter K -->
+  <path d="M40 15L40 35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M40 25L45 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M40 25L45 35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
