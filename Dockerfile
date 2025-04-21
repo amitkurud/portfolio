@@ -17,8 +17,14 @@ RUN bun run build
 FROM base AS runner
 WORKDIR /app
 ENV NODE_ENV=production
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next/static ./.next/static
+
+COPY --from=builder /app/node_modules ./node_modules
+
+# Copy the package.json file from the base stage to the current directory in the release stage.
+COPY --from=builder /app/package.json ./package.json
+
+# Copy the .next folder from the base stage to the .next directory in the release stage.
+COPY --from=builder /app/.next ./.next
 
 EXPOSE 3000
-CMD ["bun", "run", "server.js"]
+CMD ["bun", "run", "start"]
