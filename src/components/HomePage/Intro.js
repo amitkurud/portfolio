@@ -73,7 +73,7 @@ export const Intro = () => {
             </p>
             <p className="font-medium">
               I have a Bachelor of Engineering Degree and I have been in
-              Industry for almost 5 years now and counting. 🤘
+              Industry for almost 8 years now and counting. 🤘
             </p>
             <div className="mt-6 space-y-2">
               <p className="font-medium">
