@@ -25,6 +25,6 @@ COPY --from=builder /app/package.json ./package.json
 
 # Copy the .next folder from the base stage to the .next directory in the release stage.
 COPY --from=builder /app/.next ./.next
-
+COPY --from=builder /app/src/content ./src/content
 EXPOSE 3000
 CMD ["bun", "run", "start"]
