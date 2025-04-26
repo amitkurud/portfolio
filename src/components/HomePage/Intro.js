@@ -53,27 +53,35 @@ export const Intro = () => {
             {...getAnimateProps({ delay: 0.9, shouldReduceMotion })}
             className="space-y-4 text-lg leading-relaxed text-secondary-800 dark:text-secondary-200"
           >
-            <p className="font-medium">
-              I am a full stack developer who works with mostly in Java, But I
-              also work with Kotlin, Typescript, Javascript etc.
+            <p className="font-heading text-xl font-bold text-secondary-800 dark:text-secondary-200">
+              🚀 Full-Stack Developer | Java Ecosystem Enthusiast | Tech
+              Explorer
+              <br />
             </p>
             <p className="font-medium">
-              If I see a interesting Language then I would probably try it. I
-              also work with Spring Boot, Hibernate, JPA, NestJS, ReactJS,
-              Android, Kafka etc.
-            </p>
-            <p className="font-medium">
-              Mostly I work with Microservice architecture and Java Ecosystem.
-              But I am always open to Learn New Technologies.
-            </p>
-            <p className="font-medium">
-              I am a big supporter of open source movement and I am open to work
-              on any open source project that is interesting and I can be
-              helpful.
-            </p>
-            <p className="font-medium">
-              I have a Bachelor of Engineering Degree and I have been in
-              Industry for almost 8 years now and counting. 🤘
+              I thrive at the intersection of creativity and code, with 8+ years
+              of experience crafting scalable solutions across the stack. <br />
+              My playground? Java and its vibrant ecosystem—where I architect
+              microservices using Spring Boot, Hibernate, and JPA, and wrangle
+              event-driven systems with Kafka. But I don’t stop there—I’m fluent
+              in Kotlin, TypeScript, and JavaScript, and I love diving into
+              modern frameworks like NestJS and ReactJS or tinkering with
+              Android development. <br />
+              Tech curiosity is my fuel 🔥—if there’s a language, tool, or
+              paradigm that sparks innovation (Rust? Go? You name it!), I’ll
+              eagerly experiment with it. <br />
+              💡 Open Source Advocate: I’m passionate about collaborative
+              innovation. Whether it’s contributing to meaningful projects,
+              debugging thorny issues, or building tools that empower
+              developers, I’m all in. Got an OSS project that needs a hand?
+              Let’s talk! <br />
+              🎓 Background: Holding a Bachelor of Engineering degree, I’ve
+              honed my skills in fast-paced environments, balancing clean
+              architecture with pragmatic problem-solving. Always learning,
+              always shipping. <br />
+              Let’s connect if you’re building something cool, need a versatile
+              developer who geeks out on tech, or just want to debate
+              microservices vs. monoliths over coffee! ☕ 🤘
             </p>
             <div className="mt-6 space-y-2">
               <p className="font-medium">
