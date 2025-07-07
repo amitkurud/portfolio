@@ -17,7 +17,7 @@ export function PostListItem({ meta, slug }) {
               {meta.date}
             </DateString>
           </header>
-          <p className="text-gray-600 dark:text-gray-300 [overflow-wrap:anywhere]">
+          <p className="text-gray-600 dark:text-gray-300 wrap-anywhere">
             {meta.excerpt || meta.description}
           </p>
         </article>

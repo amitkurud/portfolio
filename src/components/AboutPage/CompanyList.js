@@ -53,7 +53,7 @@ const companies = [
 function CompanyCard({ company }) {
   return (
     <div className="flex flex-col md:flex-row gap-6 p-6 rounded-lg bg-secondary-100 dark:bg-secondary-800 shadow-md">
-      <div className="flex-shrink-0 flex items-center justify-center">
+      <div className="shrink-0 flex items-center justify-center">
         <div className="w-24 h-24 relative">
           <Image
             src={company.logo}
