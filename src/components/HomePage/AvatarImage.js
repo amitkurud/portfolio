@@ -38,7 +38,7 @@ export const AvatarImage = ({ getAnimateProps }) => {
           cy="0"
           r="50"
           fill="none"
-          strokeWidth="2"
+          strokeWidth="300"
           strokeDasharray="0 1"
           initial={
             shouldReduceMotion
