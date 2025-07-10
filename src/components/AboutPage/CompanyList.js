@@ -1,3 +1,8 @@
+import abjayon from "../../images/company-logos/abjayon.png";
+import epam from "../../images/company-logos/epam.png";
+import fedex from "../../images/company-logos/fedex.png";
+import infrasoft from "../../images/company-logos/infrasoft.png";
+import technoflame from "../../images/company-logos/technoflame.png";
 import Image from "next/image";
 import React from "react";
 
@@ -10,7 +15,8 @@ const companies = [
     period: "Sept 2023 - Present",
     description:
       "As Part of FedEx's Enterprise Rating team, we work on various Micro-services and tools to support Faster Rating to give FedEx ability to charge accurate amount to its Customer. The Rating Engine allows FedEx to charge various customers in various countries with applicable duties and fees. Also allows FedEx to have custom shipping rates with large customers.",
-    logo: "", // Replace with actual logo path
+    logo: fedex, // Replace with actual logo
+    // path
   },
   {
     id: 2,
@@ -19,7 +25,7 @@ const companies = [
     period: "Dec 2021 - Sept 2023",
     description:
       "Worked with Goldman Sachs on PWM which helps high net worth individuals to manage their wealth",
-    logo: "", // Replace with actual logo path
+    logo: epam, // Replace with actual logo path
   },
   {
     id: 3,
@@ -28,7 +34,7 @@ const companies = [
     period: "Mar 2019 - Dec2021",
     description:
       "Worked with Otalio Shipment Property Management System and Avance Care Carin with integration with EHR systems",
-    logo: "", // Replace with actual logo path
+    logo: abjayon, // Replace with actual logo path
   },
   {
     id: 4,
@@ -37,7 +43,7 @@ const companies = [
     period: "Jun 2018 - Mar 2019",
     description:
       "Worked with CRISIL on their Credit Risk Evaluator which helps them to evaluate the credit risk for their customers",
-    logo: "", // Replace with actual logo path
+    logo: infrasoft, // Replace with actual logo path
   },
   {
     id: 5,
@@ -46,7 +52,7 @@ const companies = [
     period: "Apr 2016 - May 2018",
     description:
       "Worked with Exam system for client to conduct examinations for their schools and monitor them remotely and evalvuate results",
-    logo: "", // Replace with actual logo path
+    logo: technoflame, // Replace with actual logo path
   },
 ];
 
