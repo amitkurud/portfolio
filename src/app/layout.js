@@ -1,3 +1,4 @@
+import { Footer } from "../components/shared/Footer";
 import "./global.css";
 import { Providers } from "./providers";
 import "@agney/skip-nav/styles.css";
@@ -26,10 +27,10 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${workSansFont.variable} h-full`}
+      className={`${workSansFont.variable}`}
       suppressHydrationWarning
     >
-      <body className="h-full bg-secondary-50 selection:bg-primary-200 dark:bg-secondary-900 dark:selection:bg-primary-500">
+      <body className="h-full bg-secondary-50 selection:bg-primary-200 dark:bg-secondary-900 dark:selection:bg-primary-500 flex flex-col min-h-screen">
         <Providers>{children}</Providers>
         <SpeedInsights />
       </body>
