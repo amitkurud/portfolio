@@ -1,4 +1,4 @@
-import { HeadNav } from "components/HomePage";
+import { Footer, HeadNav } from "components/HomePage";
 import "prismjs/themes/prism-tomorrow.css";
 
 function BlogLayout({ children }) {
@@ -6,6 +6,7 @@ function BlogLayout({ children }) {
     <div className="h-full grid grid-rows-[3rem_1fr] overflow-y-auto">
       <HeadNav />
       {children}
+      <Footer />
     </div>
   );
 }

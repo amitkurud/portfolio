@@ -17,8 +17,8 @@ const SocialMediaLink = ({ href, iconEl, ariaLabel }) => {
 
 export const Footer = () => {
   return (
-    <footer className="glass-effect py-4">
-      <div className="max-w-7xl mx-auto px-4">
+    <footer className="glass-effect py-4 mt-auto">
+      <div>
         <div className="flex items-center justify-center space-x-6">
           <SocialMediaLink
             href="https://github.com/amitkurud"

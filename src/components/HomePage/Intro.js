@@ -29,7 +29,7 @@ export const Intro = () => {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <main className="flex items-center justify-center text-center flex-col gap-y-12 px-4 py-8 max-w-4xl mx-auto">
+    <main className="items-center justify-center text-center max-w-4xl mx-auto mt-10 mb-10">
       <SkipNavContent />
       <motion.div
         {...getAnimateProps({ shouldReduceMotion })}
