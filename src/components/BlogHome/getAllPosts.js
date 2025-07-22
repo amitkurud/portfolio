@@ -18,7 +18,7 @@ export function getSortedPostsData() {
 
       const matterResult = matter(fileContents, {
         excerpt: async (file) => {
-          file.excerpt = file.content.slice(0, 250).replace(`\n`, ` `);
+          file.excerpt = file.content.slice(0, 250).replace(/\n/g, ` `);
         },
       });
 
