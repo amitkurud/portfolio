@@ -39,7 +39,7 @@
     "next-themes": "^0.4.6",
     "postcss": "^8.5.6",
     "prismjs": "^1.30.0",
-    "react": "19.1.0",
+    "react": "19.1.1",
     "react-dom": "19.1.1",
     "react-feather": "^2.0.10",
     "react-helmet": "^6.1.0",
